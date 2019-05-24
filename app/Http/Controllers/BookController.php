@@ -103,7 +103,7 @@ class BookController extends Controller
         $data->penerbit=$request->get('penerbit');
   
         $data->save();
-        return redirect()->route('data.index')->with('success', 'Data Updated');
+        return redirect()->route('data.index')->with('success', 'Data Was Updated');
     }
 
     /**
