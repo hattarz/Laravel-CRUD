@@ -114,8 +114,9 @@ class BookController extends Controller
      */
     public function destroy($id)
     {
+
         $data = Book::find($id);
         $data->delete();
-        return redirect()->route('data.index')->with('success', 'Data Deleted');
+        return redirect()->route('data.index')->with('success', 'Data Was Deleted');
     }
 }
